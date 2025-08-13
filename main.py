@@ -67,6 +67,7 @@ def create_attachment(file_path: str, filename: Optional[str] = None) -> dict:
         "content": encoded_content
     }
 
+# P.S. Resend batch send api does not support attachments. you can only use it for sending emails without attachments.
 def send_batch_emails(
     from_email: str,
     email_list: List[str],
