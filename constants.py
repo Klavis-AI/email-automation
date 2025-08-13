@@ -14,8 +14,8 @@ EMAIL_RECIPIENTS = [     # TODO: Add recipient email addresses here
     "TO_EMAIL_2",
     "TO_EMAIL_3",
 ]
-REPLY_TO = "YOUR_REPLY_TO_EMAIL" # NOT REQUIRED
 SUBJECT = "YOUR_SUBJECT" # TODO: change to your subject
+REPLY_TO = None # optional
 
 ATTACHMENT_PATH = "templates/example_attachment.pdf" # TODO: change to your attachment path, default is the example attachment in the templates folder
-ATTACHMENT_NAME = "YOUR_ATTACHMENT_NAME" # TODO: change to your attachment name
+ATTACHMENT_NAME = "example_attachment.pdf" # TODO: change to your attachment name
