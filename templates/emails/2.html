@@ -1,0 +1,70 @@
+<html>
+<body>
+<p>Hi {{name}},</p>
+
+<p>{{greeting_message}}</p>
+
+<p>{{context_paragraph}}</p>
+
+<hr>
+
+<h2>{{main_heading}}</h2>
+
+<p><strong>{{primary_info}}</strong></p>
+
+{{#if options_list}}
+<p><strong>{{options_title}}:</strong></p>
+<ul>
+{{#each options_list}}
+<li>{{this}}</li>
+{{/each}}
+</ul>
+{{/if}}
+
+<p><strong>{{instructions_title}}:</strong><br>
+{{instructions_text}}</p>
+
+{{#if additional_info}}
+<p><strong>{{additional_title}}:</strong><br>
+{{additional_info}}</p>
+{{/if}}
+
+<hr>
+
+{{#if clarification_section}}
+<h2>{{clarification_heading}}</h2>
+<p>{{clarification_intro}}</p>
+
+{{#if clarification_points}}
+<h3>{{subsection_title}}</h3>
+<p>{{subsection_content}}</p>
+
+<ul>
+{{#each clarification_points}}
+<li>{{this}}</li>
+{{/each}}
+</ul>
+{{/if}}
+
+{{#if note_section}}
+<h3>{{note_title}}</h3>
+<ul>
+{{#each note_points}}
+<li>{{this}}</li>
+{{/each}}
+</ul>
+{{/if}}
+{{/if}}
+
+<hr>
+
+<h2>{{timeline_heading}}</h2>
+
+<p>{{timeline_details}}</p>
+
+<hr>
+
+<p><strong>{{sign_off}},</strong><br>
+{{sender_info}}</p>
+</body>
+</html>

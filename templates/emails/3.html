@@ -1,0 +1,58 @@
+<html>
+<body>
+<p>Hi {{name}},</p>
+
+<p>{{intro_message}}</p>
+
+<p>{{purpose_statement}}</p>
+
+<hr>
+
+<h2>{{section_title}}</h2>
+
+<p><strong>{{main_point}}</strong></p>
+
+{{#if item_list}}
+<p><strong>{{items_heading}}:</strong></p>
+<ul>
+{{#each item_list}}
+<li>{{this}}</li>
+{{/each}}
+</ul>
+{{/if}}
+
+<p><strong>{{next_steps_title}}:</strong><br>
+{{next_steps_description}}</p>
+
+{{#if link_info}}
+<p><strong>{{link_title}}:</strong><br>
+{{link_text}} <a href="{{link_url}}">{{link_url}}</a></p>
+{{/if}}
+
+<hr>
+
+{{#if additional_section}}
+<h2>{{additional_heading}}</h2>
+<p>{{additional_content}}</p>
+
+{{#if bullet_points}}
+<ul>
+{{#each bullet_points}}
+<li>{{this}}</li>
+{{/each}}
+</ul>
+{{/if}}
+{{/if}}
+
+<hr>
+
+<h2>{{closing_section_title}}</h2>
+
+<p>{{closing_details}}</p>
+
+<hr>
+
+<p><strong>{{farewell}},</strong><br>
+{{signature_line}}</p>
+</body>
+</html>

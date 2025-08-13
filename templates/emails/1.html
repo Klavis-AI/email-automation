@@ -1,0 +1,58 @@
+<html>
+<body>
+<p>Hi {{name}},</p>
+
+<p>Thank you for {{opening_context}}. We appreciate your time and interest.</p>
+
+<p>{{introduction_paragraph}}</p>
+
+<hr>
+
+<h2>{{main_section_title}}</h2>
+
+<p><strong>{{task_description}}</strong></p>
+
+{{#if list_items}}
+<p><strong>{{list_title}}:</strong></p>
+<ul>
+{{#each list_items}}
+<li>{{this}}</li>
+{{/each}}
+</ul>
+{{/if}}
+
+<p><strong>{{action_title}}:</strong><br>
+{{action_description}}</p>
+
+{{#if submission_details}}
+<p><strong>{{submission_title}}:</strong><br>
+{{submission_details}}</p>
+{{/if}}
+
+<hr>
+
+{{#if important_section}}
+<h2>{{important_section_title}}</h2>
+<p>{{important_section_content}}</p>
+
+{{#if important_points}}
+<ul>
+{{#each important_points}}
+<li>{{this}}</li>
+{{/each}}
+</ul>
+{{/if}}
+{{/if}}
+
+<hr>
+
+<h2>{{deadline_title}}</h2>
+
+<p>{{deadline_text}}</p>
+
+<hr>
+
+<p><strong>{{closing}},</strong><br>
+{{signature}}</p>
+</body>
+</html>
